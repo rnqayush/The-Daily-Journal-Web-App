@@ -1,0 +1,30 @@
+<%- include("./partials/header") -%>
+
+<main>
+    <div class="toppost">
+        <p>Posts Of Day</p>
+    </div>
+    <div class="contents">
+        <div class="posts">
+            <% allposts.forEach(e=> { %>
+                <div class="onepost">
+                    <h1><%=e.title%></h1>
+                    <img src="<%=e.image%>" alt="img" /> 
+                    <p><%=e.content.substring(0,200) %>......</p>
+                    <a href="/posts/<%=e.id %>"> View Post</a> 
+                        <hr>
+                </div>
+                
+
+            <%})%>
+        </div>
+        <div class="signup">
+            <input placeholder="Full Name" type="text">
+            <input placeholder="Email" type="text">
+            <input placeholder="Password" type="password">
+            <button>signup</button>
+        </div>
+    </div>
+</main>
+
+<%- include("./partials/footer") -%>

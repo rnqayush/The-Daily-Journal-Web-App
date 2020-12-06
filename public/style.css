@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    
+    min-height: 100%;
+    position: relative;
+}
+body{
+    
+    background-color: rgb(253, 252, 252);
+}
+
+.nav-bar{
+    
+    background-color: rgb(235, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 4rem;
+}
+
+.nav-brand a{
+    font-size: 3rem;
+    color: rgb(87, 87, 87);
+    
+}
+.nav-link{
+    display: flex;
+    
+}
+.nav-link li{
+    margin: 21px;
+    font-size: 20px;
+}
+.nav-link a{
+    color: gray;
+}
+.nav-bar a:hover{
+    color: orange;
+}
+
+a,li{
+    list-style:none;
+    text-decoration: none;
+}
+
+
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(78, 88, 113);
+    font-family: 'JetBrains Mono', monospace;
+
+    font-family: 'Texturina', serif;
+    
+    margin-top: 9rem;
+margin-bottom: 15rem;
+    
+}
+
+.title hr{
+    width: 38%;
+    
+    border: 2px solid rgb(78, 88, 113);;
+border-radius: 36%;
+margin: auto;
+}
+.title h1{
+    margin:2rem;
+    
+}
+
+footer{
+    position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+    background-color: #e4d7d7;
+    color: rgb(120, 122, 120);   
+}
+.footer {
+    margin-top: 17px;
+}
+
+
+.contents{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.signup{
+
+    margin-top: 116px;
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+background-color: #2e938a;
+align-items: center;
+height: 325px;
+box-shadow: 6px 9px 10px rgba(204, 192, 192, 0.5);
+    
+}
+.signup input{
+    width: 21rem;
+margin-top: 32px;
+height: 42px;
+border-radius: 7px;
+border: none;
+text-align: center;
+background-color: #f0dfdf;
+font-size: 1rem;
+}
+.signup button{
+    margin-top: 2rem;
+    font-size: 24px;
+    border-radius: 48px;
+    width: 9rem;
+   
+    color: white;
+    background-color: #075e73;
+    border: none;
+    height: 39px;
+    text-align: center;
+}
+
+
+
+/******* post.js ******/
+.toppost{
+    background-color: #918f8f;
+    width: 65%;
+font-size: 31px;
+
+text-align: center;
+}
+.toppost p{
+    color: white;
+}
+.onepost{
+    margin: 3rem;
+    width: 46rem;
+    
+}
+
+.onepost img{
+    width: 100%;
+    max-height: 25rem;
+    margin: 2rem 0;
+    border: 3px solid rgb(143, 136, 136);
+}
+
+
+.onepost hr{
+    margin: 3rem;
+    border-radius: 33%;
+    border: 1px solid darkgray;
+}
+.onepost a{
+    font-size: 20px;
+    color:rgb(212, 5, 5);
+}
+.onepost a:hover{
+    color: green;
+}
+.onepost p{
+margin-bottom:10px ;
+line-height: 1.6;
+font-weight: 4px;
+}
+.onepost h1,p{
+    color: rgb(0, 0, 0);
+}
+.onepost h1{
+    text-decoration: underline;
+}
+
+
+.postitem{
+    width:70%;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+}
+.postitem h1{
+    font-size: 3rem;
+margin-bottom: 4rem;
+font-family: 'Ubuntu', sans-serif;
+text-decoration: underline;
+}
+
+
+.postitem img{
+    max-width: 98%;
+margin-bottom: 4rem;
+border: 2px solid gray;
+}
+.postitem p{
+    font-size: 20px;
+    line-height: 38px;
+    line-break: initial;
+    
+}
+
+/**************/
+
+
+@media only screen and (max-width:768px){
+    .nav-bar{
+        width: 100%;
+    }
+    .contents{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .nav-brand a{
+        font-size: 25px;
+    }
+    .nav-link a{
+        font-size: 15px;
+    }
+    .onepost{
+        margin: 0;
+        text-align: center;
+    }
+    .onepost h1{
+        margin-top: 23px;
+    }
+    .signup{
+        width: 109%;
+height: 369px;
+    }
+    footer{
+        width: 109%;
+    }
+}
+@media only screen and (max-width:375px){
+   
+    .title{
+        font-size: 19px;
+margin: 69px 0;
+    }
+    .onepost{
+        
+width: 24rem;
+
+    }
+    .onepost h1{
+        font-size: 17px;
+
+    }
+    
+   .onepost img{
+        width: 360px;
+    }
+   .onepost p{
+        font-size: 13px;
+    }
+
+    .title h1{
+        font-size: 37px;
+    }
+    .postitem{
+        margin-left: 0;
+        
+        width: 22rem;
+    }
+
+    .postitem h1{
+        font-size: 25px;
+margin-left: 6px;
+    }
+    .postitem img{
+        margin-left: 4px;
+    }
+    .postitem p{
+        font-size: 16px;
+        
+        margin-left: 12px;
+    }
+    
+
+
+
+
+
+}
